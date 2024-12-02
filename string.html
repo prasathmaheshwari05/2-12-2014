@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let msg="welcome to all in changepond we all are  to future of changepond";
+        document.write(`${msg}<br>`);
+        document.write(`${msg.length}<br>`);
+        document.write(`${msg.toUpperCase()}<br>`);
+        document.write(`${msg.toLowerCase()}<br>`);
+        
+        // use of indexof method
+        document.write(`${msg.indexOf("all")}<br>`)
+        document.write(`${msg.indexOf("all",15)}<br>`)
+        document.write(`${msg.indexOf("is",15)}<br>`)
+
+        // use of lastindexof method
+        document.write(`${msg.lastIndexOf("to")}<br>`)
+        document.write(`${msg.lastIndexOf("to",35)}<br>`)
+        document.write(`${msg.lastIndexOf("that",35)}<br>`)
+        
+
+
+        // use of search method
+
+        document.write(`${msg.search("changepond")}<br>`);
+        document.write(`${msg.search("am")}<br>`);
+       
+
+        // slice method:
+
+        document.write(`${msg.slice(15,31)}<br>`);
+
+        // -ve index
+        document.write(`${msg.slice(-20)}<br>`);
+        document.write(`${msg.slice(-20,-1)}<br>`);
+
+        // use substrig
+        document.write(`${msg.substring(10)}<br>`);
+        document.write(`${msg.substring(10,20)}<br>`);
+
+        //use substr
+
+        document.write(`${msg.substr(5,10)}<br>`);
+
+        // use of chartAt()
+
+        document.write(`${msg.charAt(0)}<br>`);
+        document.write(`${msg.charCodeAt(0)}<br>`);
+
+        //use of replace
+        document.write(`${msg.replace("changepond","india")}<br>`);
+        document.write(`${msg.replace(/Changepond/i,"india")}<br>`);
+        document.write(`${msg.replace(/changepond/ig,"india")}<br>`);
+        document.write(`${msg.replaceAll("changepond","india")}<br>`);
+
+        // SPLITE(separator)
+        console.log(`${msg}<br>`);
+        console.log(msg.split());
+        console.log(msg.split(" "));
+
+
+
+
+    </script>
+</body>
+</html>
